@@ -1,0 +1,28 @@
+{
+  "name": "@metyslav/openapi-manager",
+  "version": "0.1.0",
+  "description": "Tool for merging multiple OpenAPI files (including both API specifications and external definitions) into single OpenPI definition.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "metyslav",
+  "license": "ISC",
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md1guy/openapi-manager.git"
+  },
+  "keywords": [
+    "openapi",
+    "yaml"
+  ],
+  "bugs": {
+    "url": "https://github.com/md1guy/openapi-manager/issues"
+  },
+  "homepage": "https://github.com/md1guy/openapi-manager#readme"
+}
