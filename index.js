@@ -1,3 +1,5 @@
+'use strict';
+
 const YAML = require('yaml');
 const merge = require('deepmerge');
 const fs = require('fs');
@@ -36,7 +38,7 @@ const applyRules = (obj, rules) => {
     });
 };
 
-(() => {
+module.exports = function () {
     const config = YAML.parse(fs.readFileSync('./configuration.yaml', 'UTF-8'));
 
     const objects = [];
@@ -60,4 +62,4 @@ const applyRules = (obj, rules) => {
     output.contents = merged;
 
     fs.writeFileSync(config.outputFilename, output.toString());
-})();
+};

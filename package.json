@@ -1,10 +1,14 @@
 {
-  "name": "@metyslav/openapi-manager",
-  "version": "0.1.0",
+  "name": "openapi-manager",
+  "version": "0.1.5",
   "description": "Tool for merging multiple OpenAPI files (including both API specifications and external definitions) into single OpenPI definition.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "openapi-manager": "cli.js"
   },
   "author": "metyslav",
   "license": "ISC",
