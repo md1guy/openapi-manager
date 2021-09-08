@@ -1,7 +1,7 @@
 {
   "name": "openapi-manager",
-  "version": "0.1.5",
-  "description": "Tool for merging multiple OpenAPI files (including both API specifications and external definitions) into single OpenPI definition.",
+  "version": "0.0.6",
+  "description": "Tool for merging multiple OpenAPI files (including both API specifications and external definitions) into single OpenAPI definition.",
   "main": "index.js",
   "scripts": {
     "start": "node app",
