@@ -1,0 +1,27 @@
+inputs:
+    - inputFile: 'openapi-v1.yaml'
+      keys:
+          - openapi
+          - info
+          - servers
+          - externalDocs
+          - tags
+          - paths
+      rules:
+          - name: modifyRefPrefix
+            stripPrefix: './components.yaml#'
+            prependPrefix: '#'
+    - inputFile: 'openapi-v2.yaml'
+      keys:
+          - paths
+      rules:
+          - name: modifyRefPrefix
+            stripPrefix: './components.yaml'
+            prependPrefix: ''
+          - name: modifyPathPrefix
+            stripPrefix: 'v1'
+            prependPrefix: 'v2'
+    - inputFile: 'components.yaml'
+      keys:
+          - components
+outputFilename: 'openapi.yaml'
